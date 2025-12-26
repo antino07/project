@@ -44,14 +44,16 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        .logo {
-            font-size: 2.5rem;
+        .logo-container {
+            display: flex;
+            justify-content: center;
             margin-bottom: 1rem;
         }
 
-        .logo i {
-            color: var(--secondary);
-            margin-right: 10px;
+        .logo-image {
+            max-width: 100px;
+            height: auto;
+            display: block;
         }
 
         h1 {
@@ -363,6 +365,10 @@
             .footer-content {
                 flex-direction: column;
             }
+            
+            .logo-image {
+                max-width: 80px;
+            }
         }
     </style>
 </head>
@@ -370,8 +376,8 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="logo">
-                 <img src="logo.png" alt="School Logo" class="logo-image">
+            <div class="logo-container">
+                <img src="logo.png" alt="School Logo" class="logo-image">
             </div>
             <h1>Software Installation Guide</h1>
             <p class="subtitle">A step-by-step guide to installing essential applications: Microsoft Office, Web Browser, and Antivirus software. Perfect for beginners and IT students.</p>
