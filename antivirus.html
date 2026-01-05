@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Office Installation Guide</title>
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page-specific color overrides */
+        .nav-links a:hover {
+            color: #D83B01 !important;
+        }
+        
+        .nav-links a.active {
+            color: #D83B01 !important;
+            background-color: rgba(216, 59, 1, 0.1) !important;
+        }
+        
+        .step {
+            border-left-color: #D83B01 !important;
+        }
+        
+        .step-number {
+            background-color: #D83B01 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Software Installation Guide Logo" class="logo-image">
+                    <div class="header-text">
+                        <h1>Antivirus Installation</h1>
+                        <p>Protect your computer with antivirus software - Windows Security & third-party options</p>
+                    </div>
+                </div>
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="office.html"><i class="fas fa-file-word"></i> Microsoft Office</a></li>
+                <li><a href="browser.html"><i class="fas fa-globe"></i> Web Browser</a></li>
+                <li><a href="antivirus.html"><i class="fas fa-shield-alt"></i> Antivirus</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content - Split Layout -->
+    <div class="container">
+        <div class="split-layout">
+            <!-- Left Side: Guide Steps -->
+            <div class="guide-section">
+                <h2 class="section-title"><i class="fas fa-shield-alt"></i> Installation Steps</h2>
+                
+                <ol class="steps-list">
+                    <li class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>For Windows Security (Built-in)</h4>
+                            <p>Click Start, type "Windows Security" and open it. All protections are enabled by default in Windows 10/11.</p>
+                            <p><strong>Alternative path:</strong> Settings → Update & Security → Windows Security</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Verify Protection Status</h4>
+                            <p>Check that all protection areas show green checkmarks. Virus & threat protection should be active.</p>
+                            <p><strong>Important:</strong> Ensure real-time protection is turned on for continuous security.</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Run a Scan</h4>
+                            <p>Click "Virus & threat protection" then "Quick scan" or "Full scan" to check your system for threats.</p>
+                            <p><strong>Schedule scans:</strong> Set up automatic weekly scans for ongoing protection.</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Third-Party Antivirus</h4>
+                            <p>Download from official site (like <a href="https://avast.com" target="_blank">avast.com</a>). Run the installer and follow the setup wizard.</p>
+                            <p><strong>Free options:</strong> Avast Free, AVG Free, Bitdefender Free, Malwarebytes Free</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Complete Installation</h4>
+                            <p>Restart computer if prompted. Run first scan after installation and schedule regular scans.</p>
+                            <p><strong>Update regularly:</strong> Keep virus definitions updated for maximum protection.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="antivirus-options">
+                    <h4><i class="fas fa-list"></i> Popular Antivirus Software</h4>
+                    <ul class="antivirus-list">
+                        <li><i class="fas fa-shield-virus"></i> <strong>Windows Security</strong> - Free, built into Windows 10/11</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>Avast Free Antivirus</strong> - Comprehensive free protection</li>
+                        <li><i class="fas fa-virus-slash"></i> <strong>Bitdefender Free</strong> - Lightweight and effective</li>
+                        <li><i class="fas fa-biohazard"></i> <strong>Malwarebytes</strong> - Excellent for malware removal</li>
+                        <li><i class="fas fa-user-shield"></i> <strong>Kaspersky Free</strong> - Strong detection rates</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Important Warning</h4>
+                    <p><strong>DO NOT</strong> install multiple antivirus programs simultaneously. They will conflict with each other and cause system instability. Choose either Windows Security OR one third-party antivirus.</p>
+                    <p>If installing third-party antivirus, Windows Security will automatically disable itself.</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Images/Visuals -->
+            <div class="image-section">
+                <div class="image-box">
+                    <h3><i class="fas fa-shield-alt"></i> Windows Security</h3>
+                   <img src="img/searchbox.jpg" alt="Antivirus Download Page" class="actual-image">
+                    <p class="image-caption">Open Windows Security</p>
+                </div>
+
+                <div class="image-box">
+                    <h3><i class="fas fa-search"></i> Protetion Status</h3>
+                    <img src="img/sechome.jpg"alt="Antivirus Download Page" class="actual-image">
+                    <p class="image-caption">All the Protection should be all green </p>
+                </div>
+
+                <div class="image-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Scan For Virus Options</h3>
+                    <img src="img/qscan.jpg" alt="Antivirus Download Page" class="actual-image">
+                    <p class="image-caption">Quick Scan, Full Scan, Custon Scan, and Microsoft Defender Offline Scan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About This Guide</h3>
+                    <p>Complete antivirus installation and setup guide for optimal computer security protection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Other Guides</h3>
+                    <ul>
+                        <li><a href="office.html">Microsoft Office Installation</a></li>
+                        <li><a href="browser.html">Web Browser Installation</a></li>
+                        <li><a href="index.html">All Software Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Security Resources</h3>
+                    <ul>
+                        <li><a href="https://microsoft.com/security" target="_blank">Windows Security</a></li>
+                        <li><a href="https://avast.com" target="_blank">Avast Antivirus</a></li>
+                        <li><a href="https://malwarebytes.com" target="_blank">Malwarebytes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Software Installation Guide. Keep your antivirus updated for maximum protection.</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

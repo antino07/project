@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Installation Guide - Home</title>
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Software Installation Guide Logo" class="logo-image">
+            </div>
+            <h1>Software Installation Guide</h1>
+            <p class="subtitle">Step-by-step guides for installing essential software. Perfect for beginners and IT students.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="office.html"><i class="fas fa-file-word"></i> Microsoft Office</a></li>
+                <li><a href="browser.html"><i class="fas fa-globe"></i> Web Browser</a></li>
+                <li><a href="antivirus.html"><i class="fas fa-shield-alt"></i> Antivirus</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content container">
+        <h2 class="section-title">Choose a Software Guide</h2>
+        
+        <div class="home-cards">
+            <!-- Microsoft Office Card -->
+            <a href="office.html" class="home-card office">
+                <div class="home-card-header">
+                    <div class="home-card-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3 class="home-card-title">Microsoft Office</h3>
+                    <p>Productivity Suite Installation</p>
+                </div>
+                <div class="home-card-content">
+                    <p>Complete guide to installing Microsoft Office including purchasing, downloading, and activation steps.</p>
+                    <div class="card-link">View Guide <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </a>
+
+            <!-- Web Browser Card -->
+            <a href="browser.html" class="home-card browser">
+                <div class="home-card-header">
+                    <div class="home-card-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="home-card-title">Web Browser</h3>
+                    <p>Chrome & Other Browsers</p>
+                </div>
+                <div class="home-card-content">
+                    <p>Install and configure web browsers like Google Chrome with step-by-step instructions.</p>
+                    <div class="card-link">View Guide <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </a>
+
+            <!-- Antivirus Card -->
+            <a href="antivirus.html" class="home-card antivirus">
+                <div class="home-card-header">
+                    <div class="home-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="home-card-title">Antivirus</h3>
+                    <p>Security Software Setup</p>
+                </div>
+                <div class="home-card-content">
+                    <p>Guide to installing antivirus software including Windows Security and third-party options.</p>
+                    <div class="card-link">View Guide <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Team Members</h3>
+                     <ul class="member-list">
+                <li class="project-lead">Leng Mengchay - Project Leader</li>
+                <li>Lay Muyyou - Image Reseacher</li>
+                <li>Sreng ChanMolika - Infomation Reseacher</li>
+                <li>Huoy SeangTong - Mistake Checker</li>
+            </ul>
+                    
+                </div>
+                <div class="footer-section">
+                    <h3>About This Guide</h3>
+                    <p>Comprehensive guides to help users install essential software safely and correctly. Perfect for beginners and students.</p>
+                   
+                </div>
+                <div class="footer-section">
+                    <h3>Official Websites</h3>
+                    <ul>
+                        <li><a href="https://office.com" target="_blank">Microsoft Office</a></li>
+                        <li><a href="https://google.com/chrome" target="_blank">Google Chrome</a></li>
+                        <li><a href="https://microsoft.com/security" target="_blank">Windows Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Software Installation Guide. Created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load the main JavaScript file -->
+    <script src="script.js"></script>
+    
+    <script>
+        // Add animation to cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.home-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

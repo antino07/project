@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Office Installation Guide</title>
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page-specific color overrides */
+        .nav-links a:hover {
+            color: #D83B01 !important;
+        }
+        
+        .nav-links a.active {
+            color: #D83B01 !important;
+            background-color: rgba(216, 59, 1, 0.1) !important;
+        }
+        
+        .step {
+            border-left-color: #D83B01 !important;
+        }
+        
+        .step-number {
+            background-color: #D83B01 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Software Installation Guide Logo" class="logo-image">
+                    <div class="header-text">
+                        <h1>Web Browser Installation</h1>
+                        <p>Install and configure web browsers like Google Chrome, Firefox, and Edge</p>
+                    </div>
+                </div>
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="office.html"><i class="fas fa-file-word"></i> Microsoft Office</a></li>
+                <li><a href="browser.html"><i class="fas fa-globe"></i> Web Browser</a></li>
+                <li><a href="antivirus.html"><i class="fas fa-shield-alt"></i> Antivirus</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content - Split Layout -->
+    <div class="container">
+        <div class="split-layout">
+            <!-- Left Side: Guide Steps -->
+            <div class="guide-section">
+                <h2 class="section-title"><i class="fas fa-wifi"></i> Installation Steps (Google Chrome)</h2>
+                
+                <ol class="steps-list">
+                    <li class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Access Official Website</h4>
+                            <p>Open your current browser and go to <a href="https://google.com/chrome" target="_blank">google.com/chrome</a> (for Chrome) or the official site of your preferred browser.</p>
+                            <p><strong>Alternative:</strong> Firefox: mozilla.org/firefox | Edge: microsoft.com/edge</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Download the Installer</h4>
+                            <p>Click the "Download" button. Read and accept the Terms of Service. The installer will begin downloading.</p>
+                            <p><strong>File size:</strong> Approximately 80-100 MB for most browsers.</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Run the Installer</h4>
+                            <p>Find the downloaded file (ChromeSetup.exe on Windows) and double-click to run it. Accept User Account Control prompts.</p>
+                            <p>On macOS, drag the Chrome icon to the Applications folder when prompted.</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Automatic Installation</h4>
+                            <p>The browser installs automatically. No additional configuration is needed during this process.</p>
+                            <p>Installation typically takes 1-3 minutes depending on your internet speed and system.</p>
+                        </div>
+                    </li>
+                    <li class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>First-Time Setup</h4>
+                            <p>Choose to set as default browser (optional) and sign in to sync bookmarks, history, and settings across devices.</p>
+                            <p><strong>Tip:</strong> Import bookmarks from your old browser during setup.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="browser-options">
+                    <h4><i class="fas fa-list"></i> Popular Browser Options</h4>
+                    <div class="browser-grid">
+                        <div class="browser-item">
+                            <div class="browser-icon chrome">
+                                <i class="fab fa-chrome"></i>
+                            </div>
+                            <h5>Google Chrome</h5>
+                            <p>Fast, secure, most popular</p>
+                        </div>
+                        <div class="browser-item">
+                            <div class="browser-icon firefox">
+                                <i class="fab fa-firefox"></i>
+                            </div>
+                            <h5>Mozilla Firefox</h5>
+                            <p>Privacy-focused, open source</p>
+                        </div>
+                        <div class="browser-item">
+                            <div class="browser-icon edge">
+                                <i class="fab fa-edge"></i>
+                            </div>
+                            <h5>Microsoft Edge</h5>
+                            <p>Built-in with Windows 10/11</p>
+                        </div>
+                        <div class="browser-item">
+                            <div class="browser-icon safari">
+                                <i class="fab fa-safari"></i>
+                            </div>
+                            <h5>Apple Safari</h5>
+                            <p>Default on macOS/iOS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Images/Visuals -->
+            <div class="image-section">
+                <div class="image-box">
+                    <h3><i class="fas fa-download"></i> Download Page</h3>
+                    <img src="img/chromemain.jpg" alt="Browser Download Page" class="actual-image">
+                    <p class="image-caption">Official Google Chrome download page with download button highlighted</p>
+                </div>
+
+                <div class="image-box">
+                    <h3><i class="fas fa-cogs"></i> Installation Progress</h3>
+                    <img src="img/chromeeexe.jpg" alt="Browser Download Page" class="actual-image">
+                        <p>Browser Installation Progress</p>
+                    <p class="image-caption">Chrome installer showing in download </p>
+                </div>
+
+                <div class="image-box">
+                    <h3><i class="fas fa-cog"></i>  Installation Progress</h3>
+                    <img src="img/chromewating.jpg" alt="Browser Download Page" class="actual-image">
+                    <p class="image-caption">Wating for the setup to finish</p>
+                </div> 
+
+                 <div class="image-box">
+                    <h3><i class="fas fa-user-cog"></i> Welcoming Page</h3>
+                    <img src="img/chromewel.png" alt="Browser Download Page" class="actual-image">
+                    <p class="image-caption">Sign in existed account or Create new account</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About This Guide</h3>
+                    <p>Complete web browser installation guide with step-by-step instructions for multiple browsers.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Other Guides</h3>
+                    <ul>
+                        <li><a href="office.html">Microsoft Office Installation</a></li>
+                        <li><a href="antivirus.html">Antivirus Installation</a></li>
+                        <li><a href="index.html">All Software Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Official Download Links</h3>
+                    <ul>
+                        <li><a href="https://google.com/chrome" target="_blank">Download Chrome</a></li>
+                        <li><a href="https://mozilla.org/firefox" target="_blank">Download Firefox</a></li>
+                        <li><a href="https://microsoft.com/edge" target="_blank">Download Edge</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Software Installation Guide. Chrome is a trademark of Google LLC.</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
